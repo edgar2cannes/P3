@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Shrikhand&display=swap");
+
+
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    /* scroll-behavior: smooth; */
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+
+
+
+.header {
+    padding: 1rem 1rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1000;
+
+}
+
+
+.header_logo {
+    font-family: "Shrikhand", "cursive";
+    margin: 0;
+    text-align: center;
+}
+
+
+
+.localisation {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 1rem;
+    background-color: #f3f3f3;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.localisation_icon {
+    margin-right: 1rem;
+    color: gray;
+}
+
+.localisation_text {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0;
+    color: gray;
+}
+
+
+.explorer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.title {
+    margin: 0;
+}
+
+.subtitle {
+    /* font-weight: 300; */
+    margin: 1.5rem 0;
+    color: gray;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    background: linear-gradient(#ff79da, #9356dc);
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 3px 10px darkgrey;
+    transition: 100ms;
+}
+
+.btn:hover {
+    background-color: white;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container h2 {
+
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0 1rem;
+}
+
+#choix_menu {
+
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.choix1,
+.choix2,
+.choix3 {
+
+    position: relative;
+    left: -1rem;
+    border: 1px solid #9356dc;
+    padding: 0.4rem 0.8rem;
+    border-radius: 50%;
+    font-weight: bold;
+    background-color: #9356dc;
+    color: white;
+}
+
+li {
+    width: 280px;
+    background-color: #F6F6F6;
+    border-radius: 1rem;
+    padding: 1.5rem 0;
+    box-shadow: 0 3px 5px darkgrey;
+    transition: transform 1s;
+    font-size: 1.1rem;
+}
+
+#choix_menu li i {
+
+    margin-right: 0.5rem;
+}
+
+.restaurants {
+    padding-bottom: 4rem;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.restaurants .card {
+    cursor: pointer;
+    position: relative;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 3px 8px darkgray;
+}
+
+.restaurants .card img {
+    width: 100%;
+    object-fit: cover;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.restaurants .card .description {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.restaurants .card .description .layout {
+    width: 85%;
+}
+
+.restaurants .card .description .layout h3,
+.restaurants .card .description .layout p {
+    margin: 0;
+    padding: 0.3rem 0 0 1rem;
+}
+
+.layout p {
+    color: gray;
+}
+
+
+.restaurants .card .description .layout .layout-star {
+    width: 30px;
+}
+
+.restaurants .card .description .layout-star {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.restaurants .card .description .layout-star .fa-solid.fa-heart {
+    display: none;
+}
+
+.restaurants .card .description .layout-star:hover {
+    cursor: pointer;
+    opacity: 0;
+    background: linear-gradient(#9356dc 20%, #ff79da 100%);
+    animation: effet-opacity 1.5s ease;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.restaurants .card .description .layout-star:hover .fa-regular.fa-heart {
+    display: none;
+}
+
+.restaurants .card .description .layout-star:hover .fa-solid.fa-heart {
+    display: inline;
+}
+
+.restaurants .card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.restaurants .card:hover {
+    box-shadow: 0 0 10px #9356dc;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.restaurants span {
+    position: absolute;
+    content: "";
+    right: 10px;
+    top: 20px;
+    font-weight: bold;
+    background-color: #99E2D0;
+    color: #2FAF94;
+    padding: 0.5rem;
+    width: 65px;
+}
+
+.restaurants h2 {
+    margin: 0 0 0 1rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+footer {
+    background-color: #353535;
+    color: white;
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+footer h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Shrikhand", cursive;
+    font-weight: normal;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+footer i {
+    padding-right: 5px;
+}
+
+body footer .footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/*-------------------media query----------------------*/
+
+@media (max-width:767px) {
+
+    .container h2 {
+
+
+
+        display: flex;
+        justify-content: flex-start;
+        margin: 1rem 0 0 1rem;
+
+    }
+
+    .restaurants h2 {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+    #choix_menu {
+
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+
+    }
+
+    li {
+
+        width: 100%;
+    }
+
+    .restaurants {
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    footer h1 {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        /* font-family: "Shrikhand", cursive;
+        font-weight: normal; */
+    }
+}
