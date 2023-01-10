@@ -52,6 +52,11 @@ body {
 
 }
 
+.bg {
+    background-color: #EAEAEA;
+
+}
+
 .card img {
 
 
@@ -67,13 +72,13 @@ body {
     position: relative;
     top: -4rem;
     border-radius: 3rem 3rem 0 0;
-    background-color: white;
+    background-color: #EAEAEA;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-basis: 95%;
     padding-left: 2rem;
-    /* background-color: #EAEAEA; */
+
 }
 
 h1 {
@@ -103,22 +108,94 @@ h1 {
 
 
 
+.epd {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .Entree {
-    text-decoration: underline solid cyan 3px;
+    text-decoration: underline solid #99E2D0 3px;
+    color: gray;
+
+
+
 
 }
 
 .Entree-menu {
 
-    width: 300px;
+    /* width: 300px;
     height: 100px;
     border-radius: 10px;
     border-style: solid;
-    padding: 10px;
+    padding: 10px; */
+
+    width: 350px;
+    /* height: 60px; */
+    border-radius: 1rem;
+    /* overflow: hidden; */
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    box-shadow: 0 2px 5px darkgrey;
+    background-color: white;
 }
 
 .Entree-menu-prix {
 
     float: right;
     font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    background: linear-gradient(#ff79da, #9356dc);
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 3px 10px darkgrey;
+    transition: 100ms;
+}
+
+.btn:hover {
+    background-color: white;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background-color: #353535;
+    color: white;
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+footer h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Shrikhand", cursive;
+    font-weight: normal;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+footer i {
+    padding-right: 5px;
+}
+
+body footer .footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
