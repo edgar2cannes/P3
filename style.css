@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Shrikhand&display=swap");
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     /* scroll-behavior: smooth; */
+
 }
 
 .container {
@@ -13,6 +21,9 @@ body {
     margin: auto;
     position: relative;
 }
+
+
+
 
 
 
@@ -102,10 +113,9 @@ body {
 }
 
 #choix_menu {
-
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 3rem;
     justify-content: center;
 }
@@ -125,7 +135,7 @@ body {
 }
 
 li {
-    width: 280px;
+    width: 100%;
     background-color: #F6F6F6;
     border-radius: 1rem;
     padding: 1.5rem 0;
@@ -142,10 +152,10 @@ li {
 .restaurants {
     padding-bottom: 4rem;
     background-color: #F6F6F6;
+
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .restaurants .card {
@@ -188,12 +198,36 @@ li {
     color: gray;
 }
 
+.heart i {
 
-.restaurants .card .description .layout .layout-star {
+    position: absolute;
+}
+
+.full {
+
+    opacity: 0;
+    /* transition-property: all;
+    transition-duration: 2s; */
+    animation: effet-opacity 1.5s ease;
+
+}
+
+.full:hover {
+    opacity: 1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(#9356dc 20%, #ff79da 100%);
+
+
+}
+
+
+.restaurants .card .description .layout .heart {
     width: 30px;
 }
 
-.restaurants .card .description .layout-star {
+.restaurants .card .description .heart {
     display: flex;
     height: 50px;
     align-items: center;
@@ -201,11 +235,11 @@ li {
     font-size: 1.5rem;
 }
 
-.restaurants .card .description .layout-star .fa-solid.fa-heart {
+/* .restaurants .card .description .layout-star .fa-solid.fa-heart {
     display: none;
-}
+} */
 
-.restaurants .card .description .layout-star:hover {
+/* .restaurants .card .description .layout-star:hover {
     cursor: pointer;
     opacity: 0;
     background: linear-gradient(#9356dc 20%, #ff79da 100%);
@@ -213,15 +247,15 @@ li {
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 
-.restaurants .card .description .layout-star:hover .fa-regular.fa-heart {
+/* .restaurants .card .description .layout-star:hover .fa-regular.fa-heart {
     display: none;
 }
 
 .restaurants .card .description .layout-star:hover .fa-solid.fa-heart {
     display: inline;
-}
+} */
 
 .restaurants .card a {
     text-decoration: none;
@@ -278,6 +312,12 @@ footer i {
     padding-right: 5px;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
 body footer .footer {
     display: flex;
     justify-content: space-around;
@@ -285,60 +325,52 @@ body footer .footer {
 }
 
 
-/*-------------------media query----------------------*/
 
-@media (max-width:767px) {
 
-    .container h2 {
+/* .container h2 {
 
 
 
-        display: flex;
-        justify-content: flex-start;
-        margin: 1rem 0 0 1rem;
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem 0 0 1rem;
 
-    }
+} */
 
-    .restaurants h2 {
-        display: flex;
-        justify-content: flex-start;
-    }
+/* .restaurants h2 {
+    display: flex;
+    justify-content: flex-start;
+} */
 
 
-    #choix_menu {
+/* #choix_menu {
 
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
 
-    }
+} */
 
-    li {
+/* li {
 
-        width: 100%;
-    }
+    width: 100%;
+} */
 
-    .restaurants {
+/* .restaurants {
 
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
-    }
+} */
 
-    .footer {
-        display: flex;
-        flex-direction: column;
-        /* align-items: center; */
-    }
 
-    footer h1 {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        /* font-family: "Shrikhand", cursive;
-        font-weight: normal; */
-    }
-}
+
+/* footer h1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+   
+} */
