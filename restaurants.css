@@ -91,7 +91,7 @@ h1 {
     font-size: 1.5rem;
 }
 
-.layout-star {
+.heart {
 
     display: flex;
     height: 50px;
@@ -107,7 +107,7 @@ h1 {
     padding-right: 3rem;
 }
 
-.titre-menu .layout-star .fa-solid.fa-heart {
+.titre-menu .heart .fa-solid.fa-heart {
     display: none;
 }
 
@@ -158,13 +158,23 @@ h1 {
     box-shadow: 0 2px 5px darkgrey;
     background-color: white;
     padding: 10px;
+
+
 }
+
+
+
 
 .Entree-menu-prix {
 
     float: right;
     font-weight: bold;
+    cursor: pointer;
 }
+
+
+
+
 
 .btn {
     display: inline-block;
