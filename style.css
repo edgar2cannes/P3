@@ -204,10 +204,19 @@ li:hover {
     cursor: pointer;
 }
 
+#choix_menu li i:hover {
+    color: #9356dc;
+}
+
 #choix_menu li i {
 
     margin-right: 0.5rem;
-    color: #646464;
+    color: gray;
+}
+
+.text {
+
+    font-weight: bold;
 }
 
 
