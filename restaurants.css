@@ -67,7 +67,7 @@ body {
 
     height: 300px;
     object-fit: cover;
-    object-position: 50% 70%;
+    /* object-position: 50% 70%; */
     width: 100%;
 }
 
@@ -83,12 +83,13 @@ body {
     align-items: center;
     flex-basis: 95%;
     padding-left: 2rem;
+    padding-top: 2rem;
 
 }
 
 h1 {
     font-family: "Shrikhand", cursive;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .heart {
@@ -98,21 +99,45 @@ h1 {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
+.heart i {
+
+    position: absolute;
+}
+
+
+
+.full {
+
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.full:hover,
+.full:active {
+    opacity: 1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(#9356dc 20%, #ff79da 100%);
+
+}
 
 
 .titre-menu i {
 
     display: flex;
     font-size: 2rem;
-    padding-right: 3rem;
+    padding-right: 5rem;
 }
 
 
-.fa-solid.fa-heart {
+
+/* .fa-solid.fa-heart {
     display: none;
-}
+} */
 
 
 
@@ -128,6 +153,7 @@ h1 {
     position: relative;
     width: fit-content;
     margin-bottom: 15px;
+    margin-left: 15px;
 
 
 }
@@ -145,9 +171,9 @@ h1 {
 
 .Entree-menu {
 
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+
+    position: relative;
+    overflow: hidden;
     border-radius: 1rem;
 
     margin-bottom: 1rem;
@@ -158,17 +184,34 @@ h1 {
     padding: 10px;
     cursor: pointer;
     opacity: 0;
-    animation: appear 2s linear;
+    animation: appear 4s linear;
     animation-fill-mode: forwards;
+}
+
+.Entree-menu:hover .content_menu {
+
+    width: 90%;
+}
+
+.Entree-menu:hover .select-check {
+
+    right: 0;
+}
+
+.Entree-menu:hover .select-check i {
+
+    transform: rotate(1turn);
 }
 
 @keyframes appear {
     from {
         opacity: 0;
+        margin-top: 80px;
     }
 
     to {
         opacity: 1;
+        margin-top: 0px;
     }
 }
 
@@ -194,13 +237,34 @@ h1 {
 
 }
 
+.content_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    transition: width 1s ease;
+
+}
 
 .select-check {
 
-
+    position: absolute;
+    right: -10%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #99E2D0;
     color: white;
     font-size: 1.3rem;
+    width: 10%;
+    height: 100%;
+    transition: right 1s ease;
+}
+
+.select-check i {
+
+    transition: transform 1s ease;
 }
 
 
@@ -214,6 +278,12 @@ h1 {
     margin-bottom: 3rem;
     box-shadow: 0 3px 10px darkgrey;
     transition: 100ms;
+}
+
+.btn-cmd {
+
+    display: flex;
+    justify-content: center;
 }
 
 .btn:hover {
@@ -252,11 +322,11 @@ footer i {
     padding-right: 5px;
 }
 
-body footer .footer {
+/* body footer .footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
+} */
 
 
 
