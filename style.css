@@ -113,6 +113,7 @@ body {
     padding: 2rem;
     text-align: center;
     background-color: #fafafa;
+    margin-bottom: 3rem;
 }
 
 .title {
@@ -148,11 +149,19 @@ body {
     color: inherit;
 }
 
+.container {
+    padding-bottom: 5rem;
+}
+
 .container h2 {
 
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
+    /* display: flex;
+    justify-content: center; */
+    /* margin: 2rem;
+    margin-left: 3rem; */
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
 }
 
 #choix_menu {
@@ -316,10 +325,13 @@ i:hover {
 }
 
 .restaurants h2 {
-    margin: 2rem;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    /* margin: 2rem;
+    margin-left: 3rem; */
+    /* display: flex;
+    justify-content: center; */
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 3rem;
 }
 
 footer {
