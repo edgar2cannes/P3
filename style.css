@@ -13,13 +13,12 @@ body {
     margin: 0;
     font-family: "Roboto", sans-serif;
 
-
+    /* max-width: 1400px; */
 }
 
 /* .container {
-    max-width: 1280px;
-    margin: auto;
-    position: relative;
+    max-width: 1400px;
+   
 } */
 
 
@@ -151,6 +150,7 @@ body {
 
 .container {
     padding-bottom: 5rem;
+    
 }
 
 .container h2 {
@@ -377,4 +377,57 @@ body footer .footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+/******************Media query******************/
+
+@media (min-width:768px) {
+
+    .container h2,.restaurants h2{
+
+        display:flex;
+        justify-content: center;
+    }
+
+   /* #choix_menu{
+
+    display:flex;
+    flex-direction: row;
+    
+   } */
+   .restaurants{
+
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+   }
+
+   .footer{
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+    .footer h1{
+
+        display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+
+     
+   
+}
+
+@media (min-width:992px){
+
+    #choix_menu{
+
+        display:flex;
+        flex-direction: row;
+   }
 }

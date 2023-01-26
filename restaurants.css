@@ -10,7 +10,7 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-
+    /* max-width: 1400px; */
 }
 
 
@@ -342,9 +342,60 @@ footer i {
 
 }
 
-footer h1 {
+/* footer h1 {
     display: flex;
     justify-content: flex-start;
     width: 100%;
 
+} */
+
+
+/*****************Media Query*******************/
+
+@media (min-width:768px) {
+
+.epd{
+
+    display:flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+.ellipsis-text{
+
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.footer{
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+    .footer h1{
+
+        display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+
+   
+    
+}
+
+@media (min-width:992px){
+
+    .epd{
+
+        display:flex;
+        flex-wrap: unset;
+
+}
 }
