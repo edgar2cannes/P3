@@ -10,9 +10,8 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-    /* max-width: 1400px; */
+    
 }
-
 
 .logo {
     display: flex;
@@ -38,7 +37,6 @@ body {
     display: flex;
 }
 
-
 .header {
 
     padding: 1rem 1rem;
@@ -59,16 +57,13 @@ body {
 
 .bg {
     background-color: #EAEAEA;
-
 }
-
 
 .card img {
 
 
     height: 300px;
     object-fit: cover;
-    /* object-position: 50% 70%; */
     width: 100%;
 }
 
@@ -108,8 +103,6 @@ h1 {
     position: absolute;
 }
 
-
-
 .full {
 
     opacity: 0;
@@ -126,21 +119,12 @@ h1 {
 
 }
 
-
 .titre-menu i {
 
     display: flex;
     font-size: 2rem;
     padding-right: 5rem;
 }
-
-
-
-/* .fa-solid.fa-heart {
-    display: none;
-} */
-
-
 
 .epd {
 
@@ -155,8 +139,6 @@ h1 {
     width: fit-content;
     margin-bottom: 15px;
     margin-left: 15px;
-
-
 }
 
 .Entree::after {
@@ -167,7 +149,6 @@ h1 {
     width: 50px;
     height: 3px;
     background-color: #99E2D0;
-
 }
 
 .Entree-menu {
@@ -176,7 +157,6 @@ h1 {
     position: relative;
     overflow: hidden;
     border-radius: 1rem;
-
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -220,7 +200,6 @@ h1 {
 .delay1 {
 
     animation-delay: 1s;
-
 }
 
 .delay2 {
@@ -238,8 +217,6 @@ h1 {
     display: flex;
 
     font-weight: bold;
-
-
 }
 
 .content_menu {
@@ -327,28 +304,25 @@ footer i {
     padding-right: 5px;
 }
 
-/* body footer .footer {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-} */
-
-
-
-
 .footer {
     display: flex;
     flex-direction: column;
-
 }
 
-/* footer h1 {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
+.ellipsis-text{
 
-} */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width:90%;
+    width:auto;    
+}
 
+.ellipsis-container{
+
+   overflow: hidden;
+    width:90%;
+}
 
 /*****************Media Query*******************/
 
@@ -359,15 +333,7 @@ footer i {
     display:flex;
     flex-direction: unset;
     flex-wrap: wrap;
-    justify-content: center;
-    
-    
-}
-
-.ellipsis-text{
-
-    overflow:hidden;
-    text-overflow: ellipsis;
+    justify-content: center;    
 }
 
 .footer{
@@ -377,17 +343,12 @@ footer i {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-
     .footer h1{
 
         display: flex;
     justify-content: center;
     width: 100%;
-    }
-
-   
-    
+    }    
 }
 
 @media (min-width:992px){
