@@ -130,7 +130,8 @@ body {
 
 .container {
     padding-bottom: 5rem;
-    
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .container h2 {
@@ -138,8 +139,7 @@ body {
     width: 90%;
     margin: 0 auto;
     padding-bottom: 2rem;
-    padding-left: 15px;
-    padding-right: 15px;
+   
 }
 
 #choix_menu {
