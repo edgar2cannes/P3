@@ -96,14 +96,16 @@ h1 {
     justify-content: center;
     font-size: 1.5rem;
     cursor: pointer;
+    position:relative;
+    margin-right: 20px;
 }
-
 
 
 .full {
 
     opacity: 0;
     transition: opacity 1.5s ease;
+    position:absolute;
 }
 
 .full:hover,
