@@ -98,10 +98,7 @@ h1 {
     cursor: pointer;
 }
 
-.heart i {
 
-    position: absolute;
-}
 
 .full {
 
@@ -123,7 +120,7 @@ h1 {
 
     display: flex;
     font-size: 2rem;
-    padding-right: 5rem;
+    
 }
 
 .epd {
